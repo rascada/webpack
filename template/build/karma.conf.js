@@ -4,7 +4,7 @@ delete webpackConf.entry
 module.exports = function (config) {
   config.set({
     browsers: ['PhantomJS'],
-    frameworks: ['jasmine'],
+    frameworks: ['tap'],
     reporters: ['spec'],
     files: ['../test/unit/index.js'],
     preprocessors: {

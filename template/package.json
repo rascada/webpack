@@ -1,10 +1,7 @@
 {
-  "name": "{{ name }}",
-  "description": "{{ description }}",
-  "author": "{{ author }}",
-  {{#private}}
-  "private": true,
-  {{/private}}
+  "name": "a",
+  "description": "b",
+  "author": "c",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --config build/webpack.dev.conf.js",
     "build": "webpack --progress --hide-modules --config build/webpack.prod.conf.js",
@@ -27,14 +24,15 @@
     "file-loader": "^0.8.4",
     "function-bind": "^1.0.2",
     "inject-loader": "^2.0.1",
-    "jasmine-core": "^2.4.1",
     "jscs": "^2.8.0",
     "jscs-loader": "^0.2.0",
     "json-loader": "^0.5.4",
-    "karma": "^0.13.15",
-    "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.3",
+    "karma-phantomjs-launcher": "^0.2.3",
     "karma-spec-reporter": "0.0.23",
+    "karma-tap": "^1.0.3",
     "karma-webpack": "^1.7.0",
     "phantomjs": "^1.9.19",
     "style-loader": "^0.13.0",
@@ -42,7 +40,7 @@
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",
     "vue-loader": "^7.5.0",
-    "webpack": "^1.12.2",
+    "webpack": "^1.12.10",
     "webpack-dev-server": "^1.12.0"
   }
 }
