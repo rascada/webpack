@@ -17,6 +17,10 @@
     "private": {
       "type": "boolean",
       "default": true
+    },
+    "dist-path": {
+      "type": "string",
+      "default": "../dist/static"
     }
   }
 }
