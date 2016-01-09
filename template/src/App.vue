@@ -1,3 +1,3 @@
 <template lang='jade'>
-  app
+  h1 hello Vue!
 </template>
