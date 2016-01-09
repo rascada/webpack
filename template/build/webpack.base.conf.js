@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'babel!eslint',
+        loader: 'babel',
         exclude: /node_modules/
       },
       {
@@ -40,7 +40,7 @@ module.exports = {
   },
   vue: {
     loaders: {
-      js: 'babel!eslint'
+      js: 'babel'
     }
   },
   devServer: {
