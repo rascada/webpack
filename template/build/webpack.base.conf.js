@@ -50,10 +50,7 @@ module.exports = {
   },
   vue: {
     loaders: {
-      js: 'babel'
+      js: 'babel!jscs'
     }
-  },
-  eslint: {
-    formatter: require('eslint-friendly-formatter')
   }
 }
