@@ -19,7 +19,7 @@ $ npm run dev
 - `npm run dev`: first-in-class development experience.
   - Webpack + `vue-loader` for single file Vue components.
   - State preserving hot-reload
-  - Lint-on-save with ESLint
+  - Lint-on-save with JSCS
   - Source maps
 
 - `npm run build`: Production ready build.
@@ -41,7 +41,7 @@ You will likely need to do some tuning to suit your own needs:
 
 - Install additional libraries that you need, e.g. `vue-router`, `vue-resource`, `vuex`, etc...
 
-- Use your preferred `.eslintrc` config.
+- Use your preferred `.jscsrc` config.
 
 - Add your preferred CSS pre-processor, for example:
 
