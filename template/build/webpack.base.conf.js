@@ -1,17 +1,22 @@
 var path = require('path')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: {
+    app: './src/main.js'
+  },
   output: {
     path: path.resolve(__dirname, '{{ dist-path }}'),
     publicPath: '/static/',
-    filename: 'build.js'
+    filename: '[name].js'
   },
   resolve: {
     extensions: ['', '.js', '.vue'],
     alias: {
       'src': path.resolve(__dirname, '../src')
     }
+  },
+  resolveLoader: {
+    root: path.join(__dirname, 'node_modules'),
   },
   module: {
     preLoaders: [{
@@ -48,8 +53,7 @@ module.exports = {
       js: 'babel'
     }
   },
-  devServer: {
-    historyApiFallback: true,
-    noInfo: true
+  eslint: {
+    formatter: require('eslint-friendly-formatter')
   }
 }
